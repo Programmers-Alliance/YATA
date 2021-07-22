@@ -1,54 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
     <title>YATA | Yet Another Text Adventure</title>
 </head>
 
-<body class="main-page-layout">
-	<div class="notifications" id="notifications"> <!-- Current Game storyline and notifications -->
-		<p>Game notificiations and storyline progression goes here</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-	</div>
-	<div class="main" id="main"> <!-- This is where players interact -->
-		<p>Interactive stuff and events</p>
-		
-		<!-- DELETE THE CODE BELOW -->
-		<button id='test-button-wood'>wood</button>
-		<button id='test-button-stone'>stone</button>
-		<!-- DELETE THE CODE ABOVE -->
-		
-	</div>
-	<div class="heads-up-display" id="heads-up-display">
-		<div class='hud-player-stats' id='hud-player-stats'>
-			<p>player health, etc.. goes here.</p>
+<body class='game-layout'>
+	<div class='main' id='main'></div>		<!-- This is where player interacts -->
+	<div class='heads-up-display' id='heads-up-display'>		<!-- Player HUD -->
+		<div class='stats' id='stats'>
 			<ul>
-				<li>Health	100/100</li>
-				<li>Hunger	100/100</li>
-				<li>Armor	50/50</li>
+				<lh>Stats</lh>
+				<li>Health :</li>
+				<li>Weight :</li>
+				<li>Noise :</li>
 			</ul>
-			
-		</div> <!-- health and other stats -->
-		<div class="hud-inventory" id='hud-inventory'> <!-- player inventory -->
-			
-			<!-- DELETE THE CODE BELOW -->
-			<!-- THIS WILL BE ADDED FROM SCRIPT.JS -->
-			<div>Lorem</div>
-			<div>13</div>
-			<div>Ipsum</div>
-			<div>4</div>
-			<div>Uno</div>
-			<div>7</div>
-			<div>Tres</div>
-			<div>6</div>
-			<!-- DELETE THE CODE ABOVE -->
-		
-		</div> 
+		</div>
+		<div class='inventory' id='inventory'>
+			<ul>
+				<lh>Inventory</lh>
+			</ul>
+		</div>
 	</div>
-    <script src="script.js"></script>
+	<nav class='menu' id='menu'>		<!-- Menu for links --> 
+		<a href='.' class='text-logo'>YATA</a>
+		<a href='https://github.com/Programmers-Alliance/YATA' target='blank'>View Source</a>
+		<a href='.'>Restart</a>
+		<a href='.'>Save</a>
+		<a href='.'>Load</a>
+	</nav>
+	<script src='./script/main.js'></script>
 </body>
 </html>
