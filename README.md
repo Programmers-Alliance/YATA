@@ -55,7 +55,9 @@ A browser and a code editor (VS Code Recommended)
    npm install
    ```
 
-
+## Board
+[Trello](https://trello.com/b/3WkI5a7U/yata)
+[Discord](https://discord.gg/fwxqtvm5)
 
 <!-- USAGE EXAMPLES -->
 ## Usage
